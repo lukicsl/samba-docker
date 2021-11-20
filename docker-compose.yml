@@ -20,11 +20,11 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - /etc/samba:/etc/samba:ro
+      - /datavol/samba:/etc/samba:ro
       - /var/lib/samba:/var/lib/samba
       - /etc/passwd:/etc/passwd:ro
       - /etc/shadow:/etc/shadow:ro
-      # - /share1:/share1
+      - /datavol:/datavol
       # - /share2:/share2:ro  
 
 networks:
