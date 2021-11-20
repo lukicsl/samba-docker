@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   samba:
-    image: lukics.samba-docker:armv7
+    image: lukics/samba-docker:armv7
     container_name: samba
     environment:
       TZ: 'CST6CDT'
