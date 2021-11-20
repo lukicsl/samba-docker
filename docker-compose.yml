@@ -19,8 +19,8 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - /datavol/samba:/etc/samba:ro
-      - /var/lib/samba:/var/lib/samba
+      - /datavol/samba/etc:/etc/samba:ro
+      - /datavol/samba/lib:/var/lib/samba
       - /etc/passwd:/etc/passwd:ro
       - /etc/shadow:/etc/shadow:ro
       - /datavol:/datavol
